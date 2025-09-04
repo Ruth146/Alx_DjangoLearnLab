@@ -92,4 +92,4 @@ Feel free to fork it and try things out!
 
 ## Testing
 - Create test users and assign them to different groups (e.g., Viewer, Editor).
-- Verify that users can only perform actions allowed by their group permissions.
+- Verify that users can only perform actions allowed by their group permissions
