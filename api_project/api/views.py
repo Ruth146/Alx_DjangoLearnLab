@@ -17,5 +17,26 @@ class BookList(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 from django.shortcuts import render
+from rest_framework import generics
+from .models import Book
+from .serializers import BookSerializer
+
+class BookList(generics.ListAPIView):
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer
+from rest_framework import generics
+from .models import Book
+from .serializers import BookSerializer
+
+class BookList(generics.ListAPIView):  # ✅ This is what ALX expects
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer
+from rest_framework import generics
+from .models import Book
+from .serializers import BookSerializer
+
+class BookList(generics.ListAPIView):  # ✅ This is what ALX expects
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer
 
 # Create your views here.
